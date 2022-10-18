@@ -1,0 +1,180 @@
+/*codigo css*/
+/*definir clases*/
+.texto25 {
+    font-size: 25px;
+    display: inline;
+    color: blueviolet;
+    font-weight: bold;
+    font-style: italic;
+}
+#text25Id {
+    font-size: 45px;
+}
+
+p {
+    font-size: 25px !important;
+}
+
+#imagen {
+    width: 100px;
+    border-radius: 10px 20px 15px 30px;
+}
+
+/*<img> es un selector*/
+img {
+    width: 100px;
+    border-radius: 10px 20px 15px 30px; 
+}
+
+.caja1 {
+    border: 5px solid red;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;/*defecto*/
+}
+
+.caja2 img {
+    width: 50px;
+}
+
+div img {
+    width: 60px;
+}
+
+div img#imgDiv {
+    width: 150px;
+}
+
+section > p {
+    color:blue
+}
+
+h1 + p {
+    color:green;
+}
+
+article h1 ~ p {
+    color:green;
+}
+
+section table > tbody {
+    background-color: aquamarine;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: brown;   
+    font-size: 30px;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: rgba(168, 90, 45, 0.354);
+}
+
+a:active {
+    color: black;
+}
+
+/*nth?*/
+#tbl2 tbody tr:last-child {
+    font-size: 35px;
+}
+
+#tbl2 tbody tr:first-child {
+    font-size: 15px;
+}
+
+#tbl2 tbody tr:nth-child(odd) {
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+}
+
+#tbl2 tbody tr:nth-child(even) {
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0, 238, 255);
+}
+
+#tbl3 tbody tr:nth-child(3n + 2) {
+    background-color: rgb(255, 136, 0);
+}
+
+.links {
+    list-style-type: lower-roman ;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    border: 1px solid black;
+    align-items: flex-start;
+}
+.container img {
+    padding: 5px;
+    width: 150px;
+}
+/*
+@media only screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.search {
+    background-color: rgb(195, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.search form > button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 30px;
+}
+
+.search form > input#seach_text{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid beige;
+}
+.search__menuLink {
+    display: flex;
+}
+
+.search__menuLink li {
+    color:red;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+.search__menuLink li  a{
+    font-size: 25px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.search__menuLink li a:hover{
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+}
