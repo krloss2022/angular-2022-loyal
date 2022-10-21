@@ -1,4 +1,4 @@
-import { SingleUser, Users } from "../../domain/user/reqres-model";
+import { SingleUser, Users } from "./reqres-model";
 
 /*
 import { Users } from './model/reqres-model';
